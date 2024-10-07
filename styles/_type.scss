@@ -1,0 +1,39 @@
+// ----- Typography -----
+
+$font-families: (
+	primary: (
+		'inter': '"Inter", sans-serif'
+	)
+);
+
+$font-sizes: (
+	body: (
+		'md': 0.9375rem
+	),
+	heading: (
+		'xl': 3.5rem,
+		'lg': 2.5rem,
+		'md': 2rem,
+		'sm': 1.25rem,
+		'xs': 1.125rem
+	)
+);
+
+$font-weights: (
+	'x-bold': 800,
+	'bold': 700,
+	'regular': 400
+);
+
+$line-heights: (
+	body: (
+		'md': 1.625rem
+	),
+	heading: (
+		'xl': 3.5rem,
+		'lg': 2.5rem,
+		'md': 2rem,
+		'sm': 1.5rem,
+		'xs': 1.125rem
+	)
+);

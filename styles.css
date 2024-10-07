@@ -1,0 +1,85 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove Default Spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+input,
+label {
+  line-height: 1;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+:root {
+  --clr-primary-dark-space-blue: hsl(240, 100%, 5%);
+  --clr-primary-light-vermillion: hsl(5, 85%, 63%);
+  --clr-primary-yellow: hsl(35, 77%, 62%);
+  --clr-shades-almost-white: hsl(36, 100%, 99%);
+  --clr-shades-gunmetal: hsl(236, 13%, 42%);
+  --clr-shades-silver: hsl(233, 8%, 79%);
+  --ff-primary-inter: "Inter", sans-serif;
+  --fs-body-md: 0.9375rem;
+  --fs-heading-xl: 3.5rem;
+  --fs-heading-lg: 2.5rem;
+  --fs-heading-md: 2rem;
+  --fs-heading-sm: 1.25rem;
+  --fs-heading-xs: 1.125rem;
+  --fw-x-bold: 800;
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --lh-body-md: 1.625rem;
+  --lh-heading-xl: 3.5rem;
+  --lh-heading-lg: 2.5rem;
+  --lh-heading-md: 2rem;
+  --lh-heading-sm: 1.5rem;
+  --lh-heading-xs: 1.125rem;
+}/*# sourceMappingURL=styles.css.map */
