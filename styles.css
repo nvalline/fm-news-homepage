@@ -84,4 +84,11 @@ button {
   --lh-heading-md: 2rem;
   --lh-heading-sm: 1.5rem;
   --lh-heading-xs: 1.125rem;
+}
+
+body {
+  background-color: var(--clr-shades-almost-white);
+  font-family: var(--ff-primary-inter);
+  font-optical-sizing: auto;
+  font-style: normal;
 }/*# sourceMappingURL=styles.css.map */
