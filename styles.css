@@ -91,4 +91,23 @@ body {
   font-family: var(--ff-primary-inter);
   font-optical-sizing: auto;
   font-style: normal;
+}
+body header {
+  padding: 1.75rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .logo img {
+  height: 28px;
+  width: 45px;
+}
+body header nav[aria-label=primary] button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
