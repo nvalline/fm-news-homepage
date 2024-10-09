@@ -30,13 +30,22 @@
 			</a>
 
 			<nav aria-label="primary">
-				<!-- Mobile Nav -->
-				<button>
-					<img src="./assets/images/icon-menu.svg" alt="menu" />
+				<button class="mobile-menu-icon">
+					<img src="./assets/images/icon-menu.svg" alt="menu open" />
 				</button>
 
-				<div class="hidden">
-					<ul>
+				<!-- Mobile Nav -->
+				<div class="nav-mobile hidden">
+					<div class="mobile-menu-container">
+						<button class="mobile-menu-icon close">
+							<img
+								src="./assets/images/icon-menu-close.svg"
+								alt="menu close"
+								class="close-icon"
+							/>
+						</button>
+					</div>
+					<ul class="mobile-nav-links">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">New</a></li>
 						<li><a href="#">Popular</a></li>
@@ -46,13 +55,15 @@
 				</div>
 
 				<!-- Desktop Nav -->
-				<ul class="hidden">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">New</a></li>
-					<li><a href="#">Popular</a></li>
-					<li><a href="#">Trending</a></li>
-					<li><a href="#">Categories</a></li>
-				</ul>
+				<div class="nav-desktop hidden">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">New</a></li>
+						<li><a href="#">Popular</a></li>
+						<li><a href="#">Trending</a></li>
+						<li><a href="#">Categories</a></li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 
