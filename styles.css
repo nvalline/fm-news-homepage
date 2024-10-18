@@ -196,6 +196,40 @@ body main .featured-article .content-wrapper .content-desc .button {
   text-transform: uppercase;
   color: var(--clr-primary-dark-space-blue);
 }
+body main .new-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+  padding: 1.5rem 1.25rem;
+  background-color: var(--clr-primary-dark-space-blue);
+}
+body main .new-articles .title {
+  font-size: var(--fs-heading-md);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading-md);
+  color: var(--clr-primary-yellow);
+}
+body main .new-articles .new-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body main .new-articles .new-article > a h3 {
+  font-size: var(--fs-heading-sm);
+  font-weight: var(--fw-x-bold);
+  line-height: var(--lh-heading-sm);
+  color: var(--clr-shades-almost-white);
+}
+body main .new-articles .new-article > p {
+  font-size: var(--fs-body-md);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-body-md);
+  color: var(--clr-shades-silver);
+}
+body main .new-articles .new-article:not(:last-child) {
+  padding-bottom: 1.8125rem;
+  border-bottom: 1px solid var(--clr-shades-gunmetal);
+}
 
 .hidden {
   display: none;
