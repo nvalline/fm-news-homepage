@@ -4,18 +4,31 @@ const menuOpenIcon = document.querySelector(
 ) as HTMLButtonElement;
 const menuCloseIcon = document.querySelector('.close') as HTMLButtonElement;
 const navMobile = document.querySelector('.nav-mobile') as HTMLElement;
+const mobileNavLinks = document.querySelector(
+	'.mobile-nav-links'
+) as HTMLElement;
 
 const toggleNavMenu = () => {
-	if (navMobile.style.right === '-1rem') {
+	if (navMobile.style.width === '256px') {
 		bodyEl.style.overflow = 'unset';
-		navMobile.style.opacity = '0';
-		navMobile.style.right = '-16rem';
-		navMobile.classList.add('hidden');
+		mobileNavLinks.classList.add('hidden');
+
+		Object.assign(navMobile.style, {
+			opacity: '0',
+			padding: '1.75rem 0',
+			right: '0',
+			width: '0'
+		});
 	} else {
 		bodyEl.style.overflow = 'hidden';
-		navMobile.classList.remove('hidden');
-		navMobile.style.right = '-1rem';
-		navMobile.style.opacity = '1';
+		mobileNavLinks.classList.remove('hidden');
+
+		Object.assign(navMobile.style, {
+			width: '256px',
+			right: '-1rem',
+			padding: '1.75rem 1.25rem',
+			opacity: '1'
+		});
 	}
 };
 

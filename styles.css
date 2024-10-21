@@ -95,6 +95,7 @@ body {
   font-style: normal;
 }
 body header {
+  max-width: 375px;
   padding: 1.75rem 1rem 2rem;
   display: flex;
   align-items: center;
@@ -116,10 +117,10 @@ body header nav .nav-mobile {
   display: block;
   position: absolute;
   top: -1.75rem;
-  right: -16rem;
+  right: 0;
   height: 100vh;
-  width: 256px;
-  padding: 1.75rem 1.25rem;
+  width: 0;
+  padding: 1.75rem 0;
   background-color: var(--clr-shades-almost-white);
   opacity: 0;
   transition: all 300ms ease-in-out;
@@ -151,8 +152,15 @@ body header nav .nav-mobile .mobile-nav-links li a {
   color: var(--clr-primary-dark-space-blue);
   text-decoration: none;
 }
+body header nav .nav-mobile .mobile-nav-links.hidden {
+  display: none;
+}
+body header nav .nav-desktop.hidden {
+  display: none;
+}
 body main {
   display: grid;
+  grid-template-columns: 343px;
   gap: 4rem;
   padding: 0 1rem 5rem;
 }
@@ -268,8 +276,4 @@ body main .popular-articles .popular-article > div > p {
   font-weight: var(--fw-regular);
   line-height: var(--lh-body-md);
   color: var(--clr-shades-gunmetal);
-}
-
-.hidden {
-  display: none;
 }/*# sourceMappingURL=styles.css.map */
