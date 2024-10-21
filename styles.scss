@@ -8,6 +8,8 @@ body {
 
 	header {
 		width: 100%;
+		margin: 0 auto;
+		max-width: 1110px;
 		padding: 1.75rem 1rem 2rem;
 		display: flex;
 		align-items: center;
@@ -17,9 +19,18 @@ body {
 			padding: 2rem;
 		}
 
+		@include breakpoint-up(lg) {
+			padding: 5.5625rem 2rem 3.4375rem;
+		}
+
 		.logo img {
 			height: 28px;
 			width: 45px;
+
+			@include breakpoint-up(lg) {
+				height: 40px;
+				width: 64px;
+			}
 		}
 
 		nav {
