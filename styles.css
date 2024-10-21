@@ -95,11 +95,16 @@ body {
   font-style: normal;
 }
 body header {
-  max-width: 375px;
+  width: 100%;
   padding: 1.75rem 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 48em) {
+  body header {
+    padding: 2rem;
+  }
 }
 body header .logo img {
   height: 28px;
@@ -112,6 +117,11 @@ body header nav .mobile-menu-icon {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+@media (min-width: 48em) {
+  body header nav .mobile-menu-icon {
+    display: none;
+  }
 }
 body header nav .nav-mobile {
   display: block;
@@ -155,12 +165,42 @@ body header nav .nav-mobile .mobile-nav-links li a {
 body header nav .nav-mobile .mobile-nav-links.hidden {
   display: none;
 }
-body header nav .nav-desktop.hidden {
+@media (min-width: 48em) {
+  body header nav .nav-mobile {
+    display: none;
+  }
+}
+body header nav .nav-desktop {
   display: none;
 }
+@media (min-width: 48em) {
+  body header nav .nav-desktop {
+    display: unset;
+  }
+  body header nav .nav-desktop > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  body header nav .nav-desktop > ul > li {
+    cursor: pointer;
+  }
+  body header nav .nav-desktop > ul > li:hover > a {
+    color: var(--clr-primary-light-vermillion);
+  }
+  body header nav .nav-desktop > ul > li > a {
+    font-size: var(--fs-body-md);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-body-md);
+    color: var(--clr-shades-gunmetal);
+    text-decoration: none;
+    transition: color 300ms ease-in-out;
+  }
+}
 body main {
-  display: grid;
-  grid-template-columns: 343px;
+  display: flex;
+  flex-direction: column;
   gap: 4rem;
   padding: 0 1rem 5rem;
 }
@@ -168,10 +208,15 @@ body main .featured-article {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 343px;
 }
-body main .featured-article .featured-image {
-  height: 300px;
-  width: 343px;
+body main .featured-article .image-container {
+  max-width: 343px;
+}
+body main .featured-article .image-container .featured-image {
+  height: auto;
+  width: 100%;
 }
 body main .featured-article .content-wrapper {
   display: flex;
@@ -211,6 +256,8 @@ body main .new-articles {
   display: flex;
   flex-direction: column;
   gap: 2.1875rem;
+  margin: 0 auto;
+  max-width: 343px;
   padding: 1.5rem 1.25rem;
   background-color: var(--clr-primary-dark-space-blue);
 }
@@ -245,6 +292,8 @@ body main .popular-articles {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin: 0 auto;
+  max-width: 343px;
 }
 body main .popular-articles .popular-article {
   display: flex;
