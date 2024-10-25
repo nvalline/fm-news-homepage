@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/responsive-homepage-sass-grid-flexbox-ts-K8VbEwvEAK)
+- Live Site URL: [Here](https://nv-news-homepage.netlify.app/)
 
 ## My process
 
