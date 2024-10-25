@@ -110,7 +110,7 @@ body header {
 }
 @media (min-width: 87.5em) {
   body header {
-    padding: 5.5625rem 2rem 3.4375rem;
+    padding: 5.5625rem 0 3.4375rem;
   }
 }
 body header .logo img {
@@ -224,6 +224,12 @@ body main {
     grid-template-areas: "featured featured" "new popular";
     justify-content: center;
     gap: 4rem 1rem;
+  }
+}
+@media (min-width: 87.5em) {
+  body main {
+    grid-template-areas: "featured featured new" "popular popular popular";
+    gap: 4.4375rem 1.875rem;
   }
 }
 body main .featured-article {
@@ -377,6 +383,13 @@ body main .popular-articles {
     grid-area: popular;
   }
 }
+@media (min-width: 87.5em) {
+  body main .popular-articles {
+    flex-direction: row;
+    gap: 1.875rem;
+    max-width: 1110px;
+  }
+}
 body main .popular-articles .popular-article {
   display: flex;
   gap: 1.5rem;
@@ -384,6 +397,16 @@ body main .popular-articles .popular-article {
 body main .popular-articles .popular-article > img {
   height: 129px;
   width: 100px;
+}
+@media (min-width: 87.5em) {
+  body main .popular-articles .popular-article > img {
+    height: 127px;
+  }
+}
+@media (min-width: 87.5em) {
+  body main .popular-articles .popular-article > div {
+    width: 226px;
+  }
 }
 body main .popular-articles .popular-article > div > h3 {
   margin-bottom: 0.75rem;
