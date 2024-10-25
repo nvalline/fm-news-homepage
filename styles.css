@@ -196,6 +196,13 @@ body header nav .nav-desktop {
     justify-content: space-between;
     gap: 1.5rem;
   }
+}
+@media (min-width: 48em) and (min-width: 87.5em) {
+  body header nav .nav-desktop > ul {
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 48em) {
   body header nav .nav-desktop > ul > li {
     cursor: pointer;
   }
